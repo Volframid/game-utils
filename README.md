@@ -2,6 +2,46 @@
 
 A TERA Toolbox companion maintained by **CEM**. Seventeen familiar modules share one settings panel: FPS Utils, AFKer, Hide Motes, Auto Cutscene, JustSpamF, Potty Mouth, Message Filter, Instant Everything, Exit Instantly, Generic Box Opener, Camera Control, Party Deaths Notifier, Anti Body Block, Dynamic Day, Inventory Cache, Bugfix and Anywhere.
 
+## Screenshots
+
+Actual Game Utils 1.2.0 panel, captured from an isolated renderer with example settings and counters. No player profiles or chat are included; the example cache counters are not a performance benchmark.
+
+### Overview
+
+![Performance modes and everyday helpers in the shared panel](https://raw.githubusercontent.com/Volframid/game-utils/main/docs/screenshots/overview.png)
+
+### Dynamic Day
+
+![Time and weather icon buttons with individual sky presets](https://raw.githubusercontent.com/Volframid/game-utils/main/docs/screenshots/dynamic-day.png)
+
+<details>
+<summary>Performance modes and inventory cache</summary>
+
+![Performance controls and example cache counters](https://raw.githubusercontent.com/Volframid/game-utils/main/docs/screenshots/performance.png)
+
+</details>
+
+<details>
+<summary>Per-class skill visibility</summary>
+
+![Mode 2 presets and the Priest skill-effects exception](https://raw.githubusercontent.com/Volframid/game-utils/main/docs/screenshots/classes.png)
+
+</details>
+
+<details>
+<summary>Camera distance, field of view and shake</summary>
+
+![Numeric camera fields, sliders and independent overrides](https://raw.githubusercontent.com/Volframid/game-utils/main/docs/screenshots/camera.png)
+
+</details>
+
+<details>
+<summary>Quick Access</summary>
+
+![Storage and broker shortcuts with icons and unavailable NPC states](https://raw.githubusercontent.com/Volframid/game-utils/main/docs/screenshots/quick-access.png)
+
+</details>
+
 ## Use
 
 Type `/8 utils` or `/8 fps g` to open the desktop panel. `/!utils` and `/!fps g` work with Toolbox's command chat syntax as well. Search settings, choose a performance mode, or manage classes and custom filter lists. Settings save automatically. The panel follows Toolbox's Black, Grey, White or Pink theme.
