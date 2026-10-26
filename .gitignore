@@ -1,0 +1,9 @@
+LOCAL_UPDATES.md
+config.json
+module.config.json
+logs/
+*.log
+*.bak
+*.tmp
+node_modules/
+
