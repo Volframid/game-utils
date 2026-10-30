@@ -2,7 +2,7 @@
   "name": "game-utils",
   "author": "CEM",
   "description": "Performance, inventory cache, client fixes, quick access, environment and everyday tools in one Toolbox companion.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "disableAutoUpdate": false,
   "keywords": [
     "network"
