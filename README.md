@@ -144,6 +144,10 @@ Existing Game Utils preferences and standalone cache settings/quick-action defin
 
 Additional credits: Anywhere by nathan; Inventory Cache and local Bugfix maintenance by CEM, adapted from the existing TERA client workarounds. Existing attribution and licenses remain intact.
 
+## Runtime efficiency
+
+Runtime panel updates are combined while visible and paused while hidden or minimized. Restoring the panel shows the latest state immediately. Immutable effect catalogs use indexed lookups; user filters, automation timings and inventory behavior stay unchanged.
+
 ## Install and update
 
 Download the ZIP from [Releases](https://github.com/Volframid/game-utils/releases/latest) and extract the `game-utils` folder into `Toolbox/mods`. Keep only one installation of this module. Toolbox downloads subsequent updates automatically when module updates are enabled. Existing private settings are preserved.
