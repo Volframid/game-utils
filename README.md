@@ -77,6 +77,7 @@ In **Classes & skills**, Mode 2 has a separate **Show this class’s skill effec
 | `camera shake on/off [power] [speed]` | Change camera shake; multipliers accept 0–100 |
 | `instant` | Open Inventory tools |
 | `instant enchant/upgrade/soulbind/merge/dismantle [on/off]` | Change one instant operation |
+| `instant cards [on/off]` | Skip card fusion animations on TERA 100.02 x64 from the next launch |
 | `box` / `box start` / `box stop` / `box status` | Arm, stop or inspect repeating item use |
 | `boxdelay <0–60000>` | Minimum item-use interval in milliseconds |
 | `filter gui` | Open notification filtering settings |
@@ -97,7 +98,8 @@ Legacy commands `afk`, `hidemotes`, `skip`, `jsf`, `fps`, `fps-utils`, `bb`, `da
 - FPS settings apply to supported packet definitions. Some appearance changes require the next native spawn or an appearance refresh; the original guild-logo/style refresh remains in place.
 - Camera distance, FOV, shake power and shake speed have numeric fields. Camera values also have sliders. Release a slider or press Apply to save. The override switches control whether the saved values apply. Camera preferences are reapplied after loading without a repeating polling timer.
 - The box opener never starts automatically at login. Arm it and manually use the intended item. It repeats that item only, uses confirmed inventory changes or gacha completion to advance, stops on manual item use/session changes, and limits retries when acknowledgements are missing. A zero minimum interval adds no delay after a confirmed result; missing responses use a 5.5-second watchdog, up to three retries. It does not send skill or movement packets.
-- Instant operations begin only after the corresponding native user action or your own merge contract. Toggling an operation applies immediately. Already replaced operations keep duplicate-request protection until their contract closes.
+- Instant item operations begin after the corresponding native user action or your own merge contract. Toggling one of these operations applies immediately. Already replaced operations keep duplicate-request protection until their contract closes.
+- Instant card fusion is enabled by default on TERA 100.02 x64. It skips the opening and result animations while preserving server results and the game's selected fusion count. Use Inventory tools or `instant cards` to change it. Fully exit TERA, start Toolbox, then relaunch TERA to load the setting. Remove the standalone Instant Everything module after upgrading.
 - Party beams are synthetic visual markers; loot requests targeting them are blocked. Revival, party departure and disabling markers remove them. Beam styles and role-based selection are editable under Utilities. Message Filter's party-notice setting does not disable beams.
 - Message filtering preserves the original categories. Allow rules take priority over block rules; unknown/malformed messages pass through. `filter buffs off` and `filter skills off` restore those failure notices. Only type-6 glyph messages are filtered.
 - Anti Body Block retains the original client-side party-info technique. It refreshes after relevant party updates and every five seconds while valid online party targets and genuine party data are available. Loading, logout and disabling stop its timers. It sends no server requests. Disabling stops future refreshes; reversing an already applied collision state is not verified.
@@ -119,7 +121,7 @@ CEM maintains the integration, modern panel and fixes. Original work remains cre
 - Potty Mouth: Pinkie Pie.
 - Message Filter: CEM's rewrite of Salt Remover by SaltyMonkey.
 - Camera Control: Caali.
-- Instant Everything: Caali, Pinkie Pie, m0py, Snug and beng.
+- Instant Everything: Caali, Pinkie Pie, m0py, Snug and beng. Card fusion package by Vampic.
 - Exit Instantly: teralove.
 - Generic Box Opener & Item User: Owyn; original code credits spaacecats/mwa-box-opener, its fork and the rootbeer opener.
 - Party Deaths Notifier: SaltyMonkey, copyright 2020; its full MIT notice is retained in `lib/licenses/party-deaths-notifier.txt`.

@@ -6,6 +6,7 @@ const createDrops = require('./lib/drops');
 const features = require('./lib/features');
 const createPanel = require('./lib/panel');
 
+module.exports.ClientMod = require('./lib/instant-cards');
 module.exports.GlobalMod = function GlobalMod(mod){this.events=new EventEmitter();this.events.setMaxListeners(0);this.store=mod?require('./lib/storage')(mod.info.path):null;this.destructor=()=>this.events.removeAllListeners();};
 module.exports.NetworkMod = function GameUtils(mod) {
   const config=settings.apply(mod.settings,mod.settings),scopes=[];

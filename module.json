@@ -2,10 +2,11 @@
   "name": "game-utils",
   "author": "CEM",
   "description": "Performance, inventory cache, client fixes, quick access, environment and everyday tools in one Toolbox companion.",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "disableAutoUpdate": false,
   "keywords": [
-    "network"
+    "network",
+    "client"
   ],
   "contributors": [
     "Risenio",
@@ -27,7 +28,8 @@
     "teralove",
     "Owyn",
     "spaacecats",
-    "nathan"
+    "nathan",
+    "Vampic"
   ],
   "conflicts": [
     "afker",
@@ -51,6 +53,7 @@
     "instant-soulbind",
     "instant-dismantle",
     "instant-merge",
+    "instant-cards",
     "message-filter",
     "party-deaths-notifier",
     "anti-body-block",
